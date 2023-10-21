@@ -5,8 +5,8 @@ import random
 
 class SpotifyMoodAnalyzer:
     def __init__(self):
-        self.client_id = '19048f88d8964d4dbefc706422ed3c88'
-        self.client_secret = '4cedada0ae054036ac6bd207cb4fff28'
+        self.client_id = 'foo'
+        self.client_secret = 'bar'
 
     def _get_access_token(self):
         token_url = 'https://accounts.spotify.com/api/token'
