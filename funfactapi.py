@@ -4,7 +4,7 @@ import requests
 api_url = "https://api.api-ninjas.com/v1/facts"
 
 # Replace 'YOUR_API_KEY' with your actual API key
-api_key = "526QR0kJwoLViPbK+krDiw==mTa6VQSbMiq47NWo"
+api_key = ""
 
 # Set up the headers with the API key
 headers = {
