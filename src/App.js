@@ -1,18 +1,35 @@
-import logo from './logo.svg';
+import Navbar from './components/navbar';
 import './App.css';
+import hand from './images/hand.svg'
+import smack from './images/Smack.svg'
+import x from './images/X.svg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-         This is our 411 project. Yahoo!
-        </p>
-        
-
-      </header>
+    <div className="body">
+      <div className="welcome-bar">
+        <div className="hand-welcome">
+          <img src={hand} className="hand" alt="hand Icon" />
+          <img src={smack} className="smack-logo" alt="Smack icon" />
+        </div>
+        <div className="welcome-user"><p>Welcome!</p></div>
+      </div>
+      <section className="home-container">
+        <div className="song-container"> 
+          <div className="song-top">
+            <p>Hot Song!</p>
+            <div className="song-top-x-container">
+            <img src={x} className="x-song" alt="Smack icon" />
+            </div>
+          </div>
+          <div className="song-body">
+            <section className="song-pic"></section>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
+
 
 export default App;
