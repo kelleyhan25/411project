@@ -15,6 +15,7 @@ function App() {
         <div className="welcome-user"><p>Welcome!</p></div>
       </div>
       <section className="home-container">
+        <div className='container-first-row'>
         <div className="song-container"> 
           <div className="song-top">
             <p>Hot Song!</p>
@@ -25,6 +26,10 @@ function App() {
           <div className="song-body">
             <section className="song-pic"></section>
           </div>
+        </div>
+        <section className="movie-container">
+          
+        </section>
         </div>
       </section>
     </div>
