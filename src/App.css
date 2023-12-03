@@ -55,6 +55,7 @@
 .song-container{  
   margin-top: -3rem;
   margin-left: -1rem;
+  margin-right: 3rem;
 }
 
 .song-top{
@@ -82,6 +83,17 @@
  margin-top: 1rem;
 }
 
+.movie-top{
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  width: 11rem;
+  height: 13rem;
+  border-radius: 1.5625rem;
+  background: #004E89;
+  flex-shrink: 0;
+}
+
 .song-body{
   width: 17.875rem;
   height: 23.875rem;
@@ -100,4 +112,85 @@
   background: white;
   margin-top: .5rem;
   border-radius: 0rem 1.5625rem 0rem 0rem;
+}
+
+.container-first-row{
+  display: flex;
+}
+
+.movie-container{
+  margin-top: -3rem;
+}
+
+.movie-top{
+  display: flex;
+  justify-content: left;
+  width: 15rem;
+  height: 13rem;
+  border-radius: 1.5625rem;
+  background: #004E89;
+  flex-shrink: 0;
+  margin-bottom: 0rem;
+  margin-left: -.0001rem;
+  
+}
+
+.movie-top p{
+  margin-left: .5rem;
+  color: #EFEFD0;
+  text-align: center;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.movie-inside{
+  margin-top: -10rem;
+  width: 47.5rem;
+  height: 22.8125rem;
+  flex-shrink: 0;
+  background:#004E89;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.movie-pic{
+  padding-top: 1rem;
+  width: 46rem;
+  height: 20.5rem;
+  flex-shrink: 0;
+  border-radius: 0rem 1.5625rem 1.5625rem 1.5625rem;
+  background: white;
+}
+
+.container-second-row{
+  align-items: center;
+  justify-content: center;
+}
+
+.fun-fact-container{
+  width: 40.625rem;
+  height: 14.75rem;
+  flex-shrink: 0;
+  border-radius: 1.5625rem;
+  background: #004E89;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.joke-container{
+  margin: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.joke{
+  color: #EFEFD0;
+  font-size: 2rem;
+  font-weight: 500;
 }

@@ -45,7 +45,7 @@ class SpotifyMoodAnalyzer:
                 print("No tracks found for the given mood query.")
 
 # CALL THIS FUNCTION USING:
-mood_query = 'Sad'  
+mood_query = 'Happy'  
 mood_analyzer = SpotifyMoodAnalyzer()
 search_results = mood_analyzer.search_tracks_by_mood(mood_query)
 mood_analyzer.display_random_track(search_results)
