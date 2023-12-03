@@ -1,22 +1,18 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
-from spotifyapi.py import SpotifyMoodAnalyzer
+from spotifyapi import SpotifyMoodAnalyzer  # Assuming your SpotifyMoodAnalyzer is defined in spotifyapi.py
 
 app = Flask(__name__)
-CORS(app)
+spotify_analyzer = SpotifyMoodAnalyzer()
 
-@app.route('/api/search_tracks', methods=['POST'])
-def search_tracks():
-    data = request.get_json()
-    mood_query = data.get('mood_query', 'Happy')
-
-    try:
-        mood_analyzer = SpotifyMoodAnalyzer()
-        search_results = mood_analyzer.search_tracks_by_mood(mood_query)
-        return jsonify(search_results), 200
-    except Exception as e:
-        print(f"Error searching tracks: {e}")
-        return jsonify({'error': 'Internal Server Error'}), 500
+@app.route('/get_spotify_song', methods=['GET'])
+def get_spotify_song():
+    mood_query = request.args.get('mood', default='Sad')
+    search_results = spotify_analyzer.search_tracks_by_mood(mood_query)
+    
+    if search_results:
+        return jsonify(search_results)
+    else:
+        return jsonify({'error': 'No tracks found for the given mood query'})
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(debug=True)

@@ -5,8 +5,8 @@ import random
 
 class SpotifyMoodAnalyzer:
     def __init__(self):
-        self.client_id = 'foo'
-        self.client_secret = 'bar'
+        self.client_id = '19048f88d8964d4dbefc706422ed3c88'
+        self.client_secret = 'b220a890ea0f49a3ae6bba53afe77aed'
 
     def _get_access_token(self):
         token_url = 'https://accounts.spotify.com/api/token'
@@ -45,7 +45,7 @@ class SpotifyMoodAnalyzer:
                 print("No tracks found for the given mood query.")
 
 # CALL THIS FUNCTION USING:
-mood_query = 'Happy'  
+mood_query = 'Angry'  
 mood_analyzer = SpotifyMoodAnalyzer()
 search_results = mood_analyzer.search_tracks_by_mood(mood_query)
 mood_analyzer.display_random_track(search_results)

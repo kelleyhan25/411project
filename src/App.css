@@ -158,7 +158,7 @@
 }
 
 .movie-pic{
-  padding-top: 1rem;
+  
   width: 46rem;
   height: 20.5rem;
   flex-shrink: 0;
@@ -194,3 +194,63 @@
   font-size: 2rem;
   font-weight: 500;
 }
+
+.song-pic-spotify{
+  width: 17rem;
+  height: 15rem;
+  border-radius: 0rem 1.5625rem 0rem 0rem;
+}
+
+.song-info h4,
+.song-info p {
+  margin: 0 !important; /* Remove default margins to control spacing */
+}
+
+.song-info{
+  color: white;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.choose-song-button{
+  margin-top: .5rem;
+  display: flex;
+  justify-content: center !important;
+}
+
+.movie-picker-container {
+  display: flex;
+  flex-direction: column
+}
+
+.movie-details-container {
+  display: flex;
+  height: 20rem;
+}
+
+.movie-poster {
+  height: 23rem;
+}
+
+.movie-poster img {
+  width: 15rem; /* Adjust the width as needed */
+  height: 20.5rem; /* Adjust the height as needed */
+  border-radius: 0rem 0rem 0rem 1.5625rem;
+  padding-right: 3rem;
+}
+
+.button-selection {
+  display:flex;
+  justify-content: right;
+}
+
+.heading-movie-buttons{
+  bottom: 0;
+  margin-top: -8rem;
+  padding-right: 3rem;
+}
+.genre-buttons {
+display:flex;
+justify-content: center;
+}
+
