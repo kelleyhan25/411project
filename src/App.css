@@ -225,7 +225,7 @@
 
 .movie-details-container {
   display: flex;
-  height: 20rem;
+  height: 13rem;
 }
 
 .movie-poster {
@@ -246,9 +246,9 @@
 
 .heading-movie-buttons{
   bottom: 0;
-  margin-top: -8rem;
   padding-right: 3rem;
 }
+
 .genre-buttons {
 display:flex;
 justify-content: center;

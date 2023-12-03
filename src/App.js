@@ -1,10 +1,10 @@
-import Navbar from './components/navbar';
+
 import './App.css';
 import hand from './images/hand.svg'
 import smack from './images/Smack.svg'
 import x from './images/X.svg'
 import { useState } from 'react'
-import axios from 'axios'
+
 import SpotifyMoodPlayer from './spotifyapi.js';
 import MoviePicker from './movie.js'; // Adjust the path accordingly
 

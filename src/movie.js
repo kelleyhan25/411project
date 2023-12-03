@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const MoviePicker = () => {
   const [genre, setGenre] = useState('');
   const [movie, setMovie] = useState(null);
+  const [fetchTrigger, setFetchTrigger] = useState(0);
 
   useEffect(() => {
     if (genre) {
@@ -16,10 +17,11 @@ const MoviePicker = () => {
         })
         .catch(error => console.error('Error fetching movies:', error));
     }
-  }, [genre]);
+  }, [genre, fetchTrigger]);
 
   const handleGenreChange = selectedGenre => {
     setGenre(selectedGenre);
+    setFetchTrigger(prevTrigger => prevTrigger + 1); // Increment fetchTrigger to trigger a new fetch
   };
 
   return (
