@@ -8,7 +8,7 @@ const User = require('./models/user');
 const app = express();
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost/spotify_login', {
+mongoose.connect('mongodb+srv://kelhan:6Jv3A599!@411project.dxcrmak.mongodb.net/?retryWrites=true&w=majority, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -16,7 +16,7 @@ mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection 
 
 // Express session middleware
 app.use(session({
-  secret: 'your_secret_key',
+  secret: 'kelley',
   resave: false,
   saveUninitialized: true,
 }));
