@@ -73,13 +73,13 @@
   color: #EFEFD0;
   text-align: center;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   flex-direction: 0;
-  margin-left: 2rem;
+  margin-left: .5rem;
 }
 
 .song-top-x-container{
- padding-left: 2rem;
+ padding-left: 3rem;
  margin-top: 1rem;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .song-body{
-  width: 17.875rem;
+  width: 16.885rem;
   height: 23.875rem;
   flex-shrink: 0;
   border-radius: 1.5625rem;
@@ -107,10 +107,8 @@
 }
 
 .song-pic{
-  width: 17rem;
-  height: 15rem;
-  background: white;
-  margin-top: .5rem;
+  width: 25.875rem;
+  height: 20.875rem;
   border-radius: 0rem 1.5625rem 0rem 0rem;
 }
 
@@ -136,10 +134,10 @@
 }
 
 .movie-top p{
-  margin-left: .5rem;
+  margin-left: 1rem;
   color: #EFEFD0;
   text-align: center;
-  font-size: 1.1875rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -148,12 +146,13 @@
 .movie-inside{
   margin-top: -10rem;
   width: 47.5rem;
-  height: 22.8125rem;
+  height: 24rem;
   flex-shrink: 0;
   background:#004E89;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 1.5625rem;
 
 }
 
@@ -163,6 +162,7 @@
   flex-shrink: 0;
   border-radius: 0rem 1.5625rem 1.5625rem 1.5625rem;
   background: #004E89;
+  
 }
 
 .container-second-row{
@@ -172,11 +172,11 @@
 
 .fun-fact-container{
   width: 40.625rem;
-  height: 14.75rem;
+  height: 12rem;
   flex-shrink: 0;
   border-radius: 1.5625rem;
   background: #004E89;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-left: 4rem;
   display:flex;
   align-items: center;
@@ -188,12 +188,11 @@
   color: #EFEFD0;
   font-size: 1.5rem;
   font-weight: 500;
-  height: 7rem;
+  height: 5rem;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
-.joke-button{
-
-}
 
 .song-pic-spotify{
   width: 17rem;
@@ -204,12 +203,15 @@
 .song-info h4,
 .song-info p {
   margin: 0 !important; /* Remove default margins to control spacing */
+
 }
 
 .song-info{
-  color: white;
+  color:#EFEFD0;
   line-height: 1.2;
   font-weight: 500;
+  margin-left: 20px;
+  font-size: 13px;
 }
 
 .song-details-top{
@@ -231,6 +233,8 @@
   color: #EFEFD0;
   display: flex;
   height: 13rem;
+  margin-left: -1.6rem;
+  width: 45rem;
 }
 
 .movie-poster {
@@ -238,11 +242,12 @@
 }
 
 .movie-poster img {
-  margin-top: -5rem;
+  margin-top: -6rem;
   width: 15rem; /* Adjust the width as needed */
   height: 20.5rem; /* Adjust the height as needed */
-  border-radius: 0rem 0rem 0rem 1.5625rem;
+  border-radius: 0rem 0rem 0rem 1rem;
   padding-right: 3rem;
+  margin-left: 1rem;
 }
 
 .button-selection {
@@ -256,14 +261,46 @@
 }
 
 .heading-movie-buttons h4{
-  color: white;
+  color: #EFEFD0;
 }
 
 .genre-buttons {
-display:flex;
-justify-content: center;
+  display:flex;
+  justify-content: start;
+  gap: 10px;
+
 }
 
+.btns{
+  background-color: #FF6B35;
+  color: #EFEFD0;
+  border-radius: 40px;
+  border-style: none;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 16px; 
+}
+
+.btns:hover,
+.btns:focus {
+  background-color: #ffb703;
+}
+
+.btns2{
+  background-color: #FF6B35;
+  color: #EFEFD0;
+  border-radius: 40px;
+  border-style: none;
+  height: 40px;
+  margin-top: 8px;
+  line-height: 20px;
+  padding: 10px 16px; 
+}
+
+.btns2:hover,
+.btns2:focus {
+  background-color: #ffb703;
+}
 
 
 

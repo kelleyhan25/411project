@@ -30,10 +30,10 @@ const MoviePicker = () => {
         <div className="heading-movie-buttons">
       <h4>Select the mood you're in for a movie!</h4>
       <div className="genre-buttons">
-        <button onClick={() => handleGenreChange(16)}>Animated</button> {/* Animation */}
-        <button onClick={() => handleGenreChange(12)}>Adventurous</button>{/* Adventure*/}
-        <button onClick={() => handleGenreChange(18)}>Dramatic</button> {/* Drama */}
-        <button onClick={() => handleGenreChange(28)}>Happy</button> {/* Action */}
+        <button className= "btns" onClick={() => handleGenreChange(16)}>Animated</button> {/* Animation */}
+        <button className= "btns" onClick={() => handleGenreChange(12)}>Adventurous</button>{/* Adventure*/}
+        <button className= "btns" onClick={() => handleGenreChange(18)}>Dramatic</button> {/* Drama */}
+        <button className= "btns" onClick={() => handleGenreChange(28)}>Happy</button> {/* Action */}
       </div>
       </div>
       </section>

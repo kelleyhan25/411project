@@ -88,7 +88,6 @@ const SpotifyMoodPlayer = () => {
       </div>
       {/* Display the track information in the browser */}
       <div className="song-info">
-        <h4>Random Track:</h4>
         {randomTrack ? (
           <>
             <p>Name: {randomTrack.name}</p>
@@ -110,7 +109,7 @@ const SpotifyMoodPlayer = () => {
   
       {/* Button to fetch a random track */}
       <div className="choose-song-button">
-        <button onClick={getRandomTrack}>Get Random Track</button>
+        <button className= "btns2" onClick={getRandomTrack}>Get Random Track</button>
       </div>
       </div>
     </div>
