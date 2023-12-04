@@ -178,20 +178,21 @@
   background: #004E89;
   margin-top: 3rem;
   margin-left: 4rem;
+  display:flex;
   align-items: center;
   justify-content: center;
-}
-
-.joke-container{
-  margin: 3rem;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .joke{
   color: #EFEFD0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  height: 7rem;
+}
+
+.joke-button{
+
 }
 
 .song-pic-spotify{
