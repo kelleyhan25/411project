@@ -26,6 +26,17 @@ const MoviePicker = () => {
 
   return (
     <div className="movie-picker-container">
+            <section className="button-selection">
+        <div className="heading-movie-buttons">
+      <h4>Select the mood you're in for a movie!</h4>
+      <div className="genre-buttons">
+        <button onClick={() => handleGenreChange(16)}>Happy</button> {/* Animation */}
+        <button onClick={() => handleGenreChange(35)}>Sad</button>{/* Comedy*/}
+        <button onClick={() => handleGenreChange(18)}>Emotional</button> {/* Drama */}
+        <button onClick={() => handleGenreChange(28)}>Energetic</button> {/* Action */}
+      </div>
+      </div>
+      </section>
       <div className="movie-details-container">
         {movie && (
           <>
@@ -44,17 +55,6 @@ const MoviePicker = () => {
           </>
         )}
       </div>
-      <section className="button-selection">
-        <div className="heading-movie-buttons">
-      <h4>Select the mood you're in for a movie!</h4>
-      <div className="genre-buttons">
-        <button onClick={() => handleGenreChange(16)}>Happy</button> {/* Animation */}
-        <button onClick={() => handleGenreChange(35)}>Sad</button>{/* Comedy*/}
-        <button onClick={() => handleGenreChange(18)}>Emotional</button> {/* Drama */}
-        <button onClick={() => handleGenreChange(28)}>Energetic</button> {/* Action */}
-      </div>
-      </div>
-      </section>
     </div>
     
   );

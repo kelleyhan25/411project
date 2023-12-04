@@ -237,6 +237,7 @@
 }
 
 .movie-poster img {
+  margin-top: -5rem;
   width: 15rem; /* Adjust the width as needed */
   height: 20.5rem; /* Adjust the height as needed */
   border-radius: 0rem 0rem 0rem 1.5625rem;
@@ -250,7 +251,7 @@
 
 .heading-movie-buttons{
   bottom: 0;
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 
 .heading-movie-buttons h4{
