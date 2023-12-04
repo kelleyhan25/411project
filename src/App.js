@@ -76,7 +76,7 @@ function App() {
             <section className="joke-container">
 
               <div className="joke">{joke && <p>{joke}</p>}</div>
-              <button className="joke-button" onClick={getJoke}>Get a Joke!</button>
+              <button className= "btns" onClick={getJoke}>Get a Joke!</button>
 
             </section>
           </div>
