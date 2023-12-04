@@ -158,12 +158,11 @@
 }
 
 .movie-pic{
-  
   width: 46rem;
   height: 20.5rem;
   flex-shrink: 0;
   border-radius: 0rem 1.5625rem 1.5625rem 1.5625rem;
-  background: white;
+  background: #004E89;
 }
 
 .container-second-row{
@@ -212,6 +211,10 @@
   font-weight: 500;
 }
 
+.song-details-top{
+  height: 15.3rem;
+}
+
 .choose-song-button{
   margin-top: .5rem;
   display: flex;
@@ -224,6 +227,7 @@
 }
 
 .movie-details-container {
+  color: #EFEFD0;
   display: flex;
   height: 13rem;
 }
@@ -249,8 +253,16 @@
   padding-right: 3rem;
 }
 
+.heading-movie-buttons h4{
+  color: white;
+}
+
 .genre-buttons {
 display:flex;
 justify-content: center;
 }
+
+
+
+
 

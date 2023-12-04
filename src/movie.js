@@ -51,7 +51,7 @@ const MoviePicker = () => {
         <button onClick={() => handleGenreChange(16)}>Happy</button> {/* Animation */}
         <button onClick={() => handleGenreChange(35)}>Sad</button>{/* Comedy*/}
         <button onClick={() => handleGenreChange(18)}>Emotional</button> {/* Drama */}
-        <button onClick={() => handleGenreChange(28)}>Energetic</button> {/* Emotional */}
+        <button onClick={() => handleGenreChange(28)}>Energetic</button> {/* Action */}
       </div>
       </div>
       </section>

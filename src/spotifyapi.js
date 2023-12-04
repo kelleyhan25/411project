@@ -74,6 +74,7 @@ const SpotifyMoodPlayer = () => {
 
   return (
     <div>
+     <div className="song-details-top">
       {/* Display the preview picture */}
       <div className="random-track-container">
         {randomTrack?.album?.images?.length > 0 && (
@@ -84,7 +85,7 @@ const SpotifyMoodPlayer = () => {
           />
         )}
       </div>
-  
+      </div>
       {/* Display the track information in the browser */}
       <div className="song-info">
         <h4>Random Track:</h4>
@@ -96,7 +97,7 @@ const SpotifyMoodPlayer = () => {
         ) : (
           <p>No track selected yet.</p>
         )}
-  
+        <div className="genre-selection">
         {/* Dropdown menu for selecting mood */}
         <label htmlFor="moodSelect">Select Mood: </label>
         <select id="moodSelect" value={selectedMood} onChange={handleMoodChange}>
@@ -110,6 +111,7 @@ const SpotifyMoodPlayer = () => {
       {/* Button to fetch a random track */}
       <div className="choose-song-button">
         <button onClick={getRandomTrack}>Get Random Track</button>
+      </div>
       </div>
     </div>
   );

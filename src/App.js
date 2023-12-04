@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <div className="body">
+    <main className="body">
       <div className="welcome-bar">
         <div className="hand-welcome">
           <img src={hand} className="hand" alt="hand Icon" />
@@ -73,14 +73,14 @@ function App() {
         </div>
         <div className="container-second-row">
           <div className="fun-fact-container">
-            <div className="joke-container">
+            <section className="joke-container">
               <div className="joke">{joke && <p>{joke}</p>}</div>
               <button onClick={getJoke}>Get Quote</button>
-            </div>
+            </section>
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
 
